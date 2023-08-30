@@ -10,7 +10,6 @@ def getServerInfo(ip_address, port):
         valid           = True
         protocol        = "Unknown"
         name            = "Unknown"
-        map             = "Unknown"
         folder          = "Unknown"
         game            = "Unknown"
         id              = "Unknown"
@@ -118,7 +117,6 @@ def getServerInfo(ip_address, port):
     # Copy the extracted data to the ServerInfo object
     ServerInfo.protocol         = protocol
     ServerInfo.name             = name
-    ServerInfo.map              = map
     ServerInfo.folder           = folder
     ServerInfo.game             = game
     ServerInfo.id               = id
