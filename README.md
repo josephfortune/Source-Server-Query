@@ -13,24 +13,28 @@ Queries the server and returns a ServerInfo object
 
 ### Example
 ```python
-import ServerQuery
-ServerInfo = ServerQuery.getServerInfo("192.223.30.68", 27015)
+import SourceServerQuery
+ServerInfo = SourceServerQuery.getServerInfo("192.223.30.68", 27015)
 
 if ServerInfo.valid:
-    print("Name: "          + ServerInfo.name           + "\n")
-    print("Protocol: "      + ServerInfo.protocol       + "\n")
-    print("Folder: "        + ServerInfo.folder         + "\n")
-    print("Game: "          + ServerInfo.game           + "\n")
-    print("ID: "            + ServerInfo.id             + "\n")
-    print("Players: "       + ServerInfo.players        + "\n")
-    print("MaxPlayers: "    + ServerInfo.maxPlayers     + "\n")
-    print("Bots: "          + ServerInfo.bots           + "\n")
-    print("Server Type: "   + ServerInfo.serverType     + "\n")
-    print("Environment: "   + ServerInfo.environment    + "\n")
-    print("Visibility: "    + ServerInfo.visibility     + "\n")
-    print("VAC Secured: "   + ServerInfo.vac            + "\n")
-    print("Version: "       + ServerInfo.version        + "\n")
-    print("Extra Data: "    + ServerInfo.extraDataFlag  + "\n")
+    print("Name:",          ServerInfo.name)
+    print("Protocol:",      ServerInfo.protocol)
+    print("Map:",           ServerInfo.map)
+    print("Folder:",        ServerInfo.folder)
+    print("Game:",          ServerInfo.game)
+    print("ID:",            ServerInfo.id)
+    print("Players:",       ServerInfo.players)
+    print("MaxPlayers:",    ServerInfo.maxPlayers)
+    print("Bots:",          ServerInfo.bots)
+    print("Server Type:",   ServerInfo.serverType)
+    print("Environment:",   ServerInfo.environment)
+    print("Visibility:",    ServerInfo.visibility)
+    print("VAC Secured:",   ServerInfo.vac)
+    print("Version:",       ServerInfo.version)
+    print("Extra Data:",    ServerInfo.extraDataFlag)
+    
+else:
+    print("Invalid server information")
 ```
 ## License
 
